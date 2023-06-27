@@ -1,2 +1,10 @@
-# swel
-SWEL - A Domain-Specific Language for Modelling Data-Intensive Workflows
+# SWEL - A Domain-Specific Language for Modelling Data-Intensive Workflows
+_This page contains additional material to the paper entitled “SWEL: A Domain-Specific Language for Modelling Data-Intensive Workflows”, accepted in BISE journal (2023)_
+
+## SWEL Technical Report
+
+This technical report defines the formal specification of SWEL (Scientific Workflow Execution Language) in terms of its meta-models and constraints, making this definition syntax-independent, according to the precepts of model-driven engineering. SWEL is a domain-specific modelling workflow language for defining data-intensive applications, which use advanced computing techniques with the aim of discovering valuable knowledge from huge amounts of data coming from real-world sources. The objective of SWEL is to provide a high-level, domain-independent definition language for the formulation of scientific workflows, hiding low-level computational aspects. SWEL is founded on a multi-layered structure that enables both the definition of workflows for different domains, the reuse of knowledge and the portability and interoperability among different workflow platforms.
+
+## Tool Support
+
+JSON is an IETF ([Internet Engineering Task Force](https://datatracker.ietf.org/doc/html/rfc8259)) standard language widely used as a data exchange format on the web via, e.g., REST APIs and services. JSON is also possible to use SWEL as a concrete textual notation for the serialisation of DIW models. To improve practicability, a syntactic validator is a useful tool to verify that the JSON document is well constructed and conforms to both the standard and the SWEL metamodel. To this end, a JSON schema has been generated in accordance with the declaration of the JSON-based concrete notation corresponding to the metamodel. The validation tool has been implemented in Java and it provides a command-line interface whose only argument is the path of the JSON file to be analysed. It reads and parses the input file in order to check if its content is according to the JSON scheme. If not compliant, the execution console reports the detected errors.
